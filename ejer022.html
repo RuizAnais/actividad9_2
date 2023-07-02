@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades</title>
+    <style>
+        #bt {
+            border-top: 5px double #369;
+        }
+
+        #bb {
+            border-bottom: 1px solid #C00;
+        }
+
+        #m {
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+        }
+
+        #pd {
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
+
+        #va table,
+        tr,
+        td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        #va tr {
+            height: 4em;
+        }
+
+        #va td:nth-child(1) {
+            vertical-align: baseline;
+        }
+
+        #va td:nth-child(2) {
+            vertical-align: top;
+        }
+
+        #va td:nth-child(3) {
+            vertical-align: middle;
+        }
+
+        #va td:nth-child(4) {
+            vertical-align: bottom;
+        }
+
+        .text1 {
+            text-indent: 15px;
+        }
+
+        .text2 {
+            text-indent: 20%;
+        }
+
+        #ww1 {
+            word-wrap: break-word;
+        }
+
+        #ww2 {
+            word-wrap: break-word;
+        }
+
+        #stroke {
+            -webkit-text-stroke: 2px red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+
+    <h2>Border-top</h2>
+    <div id="bt">
+        <p>Border-top: Establece algunas o todas las propiedades del borde superior de los elementos (anchura,estilo
+            de borde y color).</p>
+    </div>
+
+    <br>
+
+    <h2>Border-bottom</h2>
+    <div id="bb">
+        <p>
+            La propiedad border-bottom se utiliza para establecer de forma abreviada el valor de una o más propiedades
+            simultáneamente, como el grosor, estilo y color del borde inferior de un elemento.
+        </p>
+    </div>
+
+    <br>
+
+    <div id="m">
+        <h2>Margin</h2>
+        <p>
+            Establece la anchura de algunos o todos los márgenes de los elementos. La propiedad margin es tan poderosa
+            que
+            permite establecer uno, dos, tres o los cuatro márgenes de forma simultánea. En este ejemplo se indican tres
+            valores:
+        <ol>
+            <li>margin-top: hace referencia al márgen superior.</li>
+            <li>margin-right: el valor del márgen horizontal derecho.</li>
+            <li>margin-bottom: es el margen inferior.</li>
+            <li>margin-left: el valor del márgen horizontal izquierdo.</li>
+        </ol>
+        </p>
+    </div>
+
+    <br>
+
+    <div id="pd">
+        <h2>Padding</h2>
+        <p>
+            Establece la anchura de algunas o todas las zonas de relleno de los elementos. En este ejemplo se indican
+            cuatro
+            valores:
+        <ol>
+            <li>padding-top: es el relleno superior.</li>
+            <li>padding-right: es el relleno derecho.</li>
+            <li>padding-bottom: es el relleno inferior.</li>
+            <li>padding-left: es el relleno izquierdo.</li>
+        </ol>
+        </p>
+    </div>
+
+    <br>
+
+    <div id="va">
+        <h2>Vertical align</h2>
+        <p>
+            La propiedad vertical-align puede usarse para alterar la ubicación o posicionamiento vertical de un elemento
+            en línea, en relación a su elemento padre o a la línea del elemento. (Un elemento en línea es uno que no
+            tiene salto de línea ni antes ni después de él).</p>
+
+        <table>
+            <tr>
+                <td>baseline</td>
+                <td>top</td>
+                <td>middle</td>
+                <td>bottom</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div>
+        <h2 class="text1">Text-indent (Sangría de texto)</h2>
+        <p>
+            La propiedad text-indent indica la tabulación o indentación que se aplica a la primera línea de texto de un
+            elemento.
+        </p>
+        <p class="text2"> El tamaño de la tabulación se puede indicar con cualquiera de las unidades de medida definidas
+            por CSS, puede aplicarse a elementos de nivel bloque (P, H1, etc.) Puede ser positivo o negativo, mediante
+            cualquiera de las unidades de medida incluyendo los porcentajes.
+        </p>
+    </div>
+
+    <br>
+
+    <div>
+        <h2>Word-wrap</h2>
+        <p>
+            La propiedad Word-wrap sirve para controlar palabras largas que pueden exceder un contenedor, podemos hacer
+            que la palabra larga se interrumpa y continúe en la siguiente línea, de tal manera que queda ajustada dentro
+            del contenedor o podemos dejar tal cual, para ello haremos uso de un par de valores
+        </p>
+        <p id="ww1">
+            El valor normal hace que la no se altere y quede como por defecto, es decir no hace efecto visible sobre el
+            texto; si el texto sobrepasa el contendor, entonces continuará sobrepasando con el valor normal.
+        </p>
+        <p id="ww2">
+            El valor break-word hará que las palabras largas que sobrepasa un contenedor se ajuste y quede totalmente
+            dentro de dicho contenedor, para ello se romperán dichas palabras si es necesario para continuar en la
+            siguiente línea de texto.
+        </p>
+    </div>
+
+    <br>
+
+    <div>
+        <h2>Webkit-text-stroke</h2>
+        <p>
+            La propiedad CSS -webkit-text-stroke especifica la anchura y color del trazo para los caractéres de texto.
+            Esta forma es una manera corta en relación con la forma larga que necesita usar las
+            propiedades-webkit-text-stroke-width y -webkit-text-stroke-color. Ejemplo:
+        <p id="stroke">La anchura de este texto es de 2px y es de color rojo.</p>
+
+
+        </p>
+    </div>
+
+
+</body>
+
+</html>
